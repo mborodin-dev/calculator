@@ -1,0 +1,95 @@
+@import url('https://fonts.cdnfonts.com/css/lovelo?styles=25962');
+
+body {
+  background: linear-gradient(to right, rgb(17, 218, 221), rgb(255, 255, 255));
+}
+
+.calc {
+  margin: 10% auto;
+  width: 300px;
+  height: 480px;
+  border-radius: 20px;
+  background: #343434;
+  padding: 18px;
+  box-shadow: 8px 8px 10px #020202;
+}
+
+.calc-screen {
+  border: 3px solid rgb(255, 255, 255);
+  background: linear-gradient(
+    to bottom right,
+    rgb(3, 246, 56),
+    rgb(92, 92, 92)
+  );
+  border-radius: 1cqw;
+  height: 100px;
+  padding: 10px;
+  display: grid;
+  margin-bottom: 20px;
+}
+
+input {
+  background: inherit;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: 'Lovelo', sans-serif;
+  font-size: 3.5rem;
+  text-align: end;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas:
+    'c c del del'
+    'seven eight nine plus'
+    'four five six minus'
+    'one two three division'
+    'zero point equally multiplication';
+  grid-gap: 7px;
+  justify-items: center;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  background: #6e6e6e;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}
+
+.btn:active {
+  filter: brightness(80%);
+}
+
+.btn.red {
+  background: rgb(176, 52, 52);
+  grid-area: c;
+  width: 100%;
+  border-radius: 5cqw;
+}
+
+.btn.del {
+  grid-area: del;
+  width: 100%;
+  border-radius: 5cqw;
+}
+
+.btn.grey {
+  background: #afaeae;
+}
+
+.btn.green {
+  background: rgb(117, 201, 102);
+}
+
+.btn.orange {
+  background: #e69a2f;
+}
